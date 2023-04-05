@@ -1,0 +1,10 @@
+mark <- 12
+while (mark > 0)
+{
+if (mark < 4) print("Bad.") else{
+  if (mark >= 4 & mark < 6) print("Not bad.")
+  if (mark >= 6 & mark < 8) print("Good.")
+  if (mark >= 8 & mark <= 10) print("Excellent.")
+  if (mark > 10) print("We are the champions, my friend...")
+  mark = mark - 1
+}
