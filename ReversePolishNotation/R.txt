@@ -12,10 +12,10 @@ is_prime <- function(n) {
     if (n %% i == 0 || n %% (i + 2) == 0) {
       return(FALSE)
     }
-    
+
     i <- i + 6;
   }
-  
+
   return(TRUE)
 }
 

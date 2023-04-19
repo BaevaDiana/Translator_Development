@@ -1,0 +1,1 @@
+is_prime n n 1 <= л1 сок FALSE 1 т return л2 ао л1 : n 3 <= л3 сок TRUE 1 т return л4 ао л3 : n 2 %% 0 == | n 3 %% 0 == | л5 сок FALSE 1 т return л5 : i 5 л6 : i i * n <= л7 сок n i %% 0 == | n i 2 + %% 0 == | л8 сок FALSE 1 т return л8 : i i 6 + <- л6 ао л7 : TRUE 1 т return <- if л4 if л2 i ; л9 : 1 л10 сок is_prime i 1 т ( л11 сок i print л11 : 100 ; л9 ао л10 : function <- 
