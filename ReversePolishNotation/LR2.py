@@ -282,6 +282,7 @@ f = open('reverse_polish_entry.txt', 'w', encoding='ANSI')
 f.write(out_seq)
 f.close()
 
+# действие после нажатия на кнопку
 def rpn():
     label4 = tkinter.Label(window, text='Обратная польская запись', font=("Arial", 10), foreground="white",background="#574f4f")
     label4.place(x=475, y=400, width=245, height=45)
@@ -292,17 +293,15 @@ def rpn():
     textline1.place(x=325, y=470)
 
 
-
-
+# создание окна интерфейса
 window = tkinter.Tk()
 window.geometry('1300x700')
 window.title("Reverse polish interface")
 window.configure(bg='#6e6e6e')
 
-
+# расположение всех необходимых текстовых окошек, лэйблов
 label2 = tkinter.Label(window, text='Программа на входном языке',font=("Arial", 10),foreground="white", background="#574f4f")
 label2.place(x=165, y=50, width=200, height=50)
-
 
 text = open('R.txt',encoding='utf-8').readlines()
 text=''.join(text)
