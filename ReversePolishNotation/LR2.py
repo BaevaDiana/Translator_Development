@@ -277,7 +277,7 @@ while i < len(t):
 while len(stack) > 0:
     out_seq += stack.pop() + ' '
 
-# файл, содержащий обратную польскую запись
+#файл, содержащий обратную польскую запись
 f = open('reverse_polish_entry.txt', 'w', encoding='ANSI')
 f.write(out_seq)
 f.close()
@@ -286,11 +286,11 @@ f.close()
 def rpn():
     label4 = tkinter.Label(window, text='Обратная польская запись', font=("Arial", 10), foreground="white",background="#574f4f")
     label4.place(x=475, y=400, width=245, height=45)
-    rpn_text = open('reverse_polish_entry.txt',encoding='ANSI').readlines()
+    rpn_text = open('reverse_polish_entry_1.txt',encoding='ANSI').readlines()
     rpn_text = ''.join(rpn_text)
-    textline1 = Text(window, height=7, width=67)
+    textline1 = Text(window, height=10, width=95)
     textline1.insert(1.0, rpn_text)
-    textline1.place(x=325, y=470)
+    textline1.place(x=245, y=470)
 
 
 # создание окна интерфейса

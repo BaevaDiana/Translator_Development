@@ -1,27 +1,41 @@
-is_prime <- function(n) {
-  if (n <= 1) {
-    return(FALSE)
-  } else if (n <= 3) {
-    return(TRUE)
-  } else if (n %% 2 == 0 || n %% 3 == 0) {
-    return(FALSE)
+# поиск суммы цифр числа и проверка суммы на простоту
+sum_digits <- function(n) {
+  sum <- 0
+  while (n > 0) {
+    sum <- sum + (n %% 10)
+    n <- n %/% 10
   }
-  
-  i <- 5;
-  while (i * i <= n) {
-    if (n %% i == 0 || n %% (i + 2) == 0) {
+
+  # функция проверки на простоту
+  is_prime <- function(n) {
+    if (n <= 1) {
+      return(FALSE)
+    } else if (n <= 3) {
+      return(TRUE)
+    } else if (n %% 2 == 0 || n %% 3 == 0) {
       return(FALSE)
     }
-    
-    i <- i + 6;
+
+    i <- 5;
+    while (i * i <= n) {
+      if (n %% i == 0 || n %% (i + 2) == 0) {
+        return(FALSE)
+      }
+
+      i <- i + 6;
+    }
+    return(TRUE)
   }
-  
-  return(TRUE)
+
+  # вызов функции для проверки простоты суммы цифр числа
+  if (is_prime(summa)) {
+    print(paste(summa, "is prime"))
+  } else {
+    print(paste(summa, "is not prime"))
+  }
+
 }
 
-# Цикл для вывода простых чисел до 100
 for (i in 1:100) {
-  if (is_prime(i)) {
-    print(i)
-  }
+  sum_digits(i)
 }

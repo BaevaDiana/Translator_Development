@@ -1,0 +1,5 @@
+
+sum_digits 1 1 мо summa 0 <- n > л1 сок summa summa n %% + <- n n 10 /% <- л1 ао 
+is_prime 2 2 мо n n 1 <= л2 сок FALSE т return л3 ао л2 : n 3 <= л4 сок TRUE т return л5 ао л4 : n 2 %% | n 3 %% | л6 сок FALSE т return л7 ао л6 : i 5 <- л8 : i i * n <= л9 сок n i %% | n i 2 + %% | л10 сок FALSE т return л11 ао л10 : i i 6 + <- л8 ао л9 : TRUE т return <- if л7 if л5 if л3 function <- йо
+is_prime summa т ( л12 сок summa "is prime" paste print л13 ао л12 : summa "is not prime" paste print ) ; if <- йо
+3 1 мо i 1 <- sum_digits i т ; for <- йо 

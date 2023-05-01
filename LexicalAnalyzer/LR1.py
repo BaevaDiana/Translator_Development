@@ -4,8 +4,8 @@ import tkinter
 from tkinter import *
 
 SERVICE_WORDS = ['if', 'else','print','for',\
-                 'in', 'while', 'scan', 'function','c']
-OPERATIONS = ['!', '!=', '%%', '*', '^', '+', '-', '<-', '/', '<', '<=', '=',\
+                 'in', 'while', 'scan', 'function','c','paste']
+OPERATIONS = ['!', '!=', '%%','%/% ', '*', '^', '+', '-', '<-', '/', '<', '<=', '=',\
               '==', '>', '>=','&','|']
 SEPARATORS = ['\t','\n', ' ', '(', ')', ',', ':', ';', '[', ']', '{', '}']
 def act():
