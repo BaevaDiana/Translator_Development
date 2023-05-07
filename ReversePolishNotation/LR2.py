@@ -1,4 +1,3 @@
-#import LR1
 import json
 import re
 import tkinter

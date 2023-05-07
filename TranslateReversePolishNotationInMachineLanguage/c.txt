@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+void main() {
+    if (!((>n))) goto Ì1;
+    goto Ì1;
+    void (>n)() {
+        if (<=1) {
+            goto Ì3;
+        }
+        if (<=3) {
+            goto Ì5;
+        }
+        if (|(%3)) {
+            goto Ì7;
+        }
+        Ì8: if (<=n) {
+            if (!((|(%(+2))))) goto Ì10;
+            goto Ì11;
+            Ì10: goto Ì8;
+        }
+        if Ì5 {
+            goto Ì13;
+        }
+        void main() {
+        }

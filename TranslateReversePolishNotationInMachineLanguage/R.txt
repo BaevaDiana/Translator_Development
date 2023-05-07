@@ -1,0 +1,41 @@
+# поиск суммы цифр числа и проверка суммы на простоту
+sum_digits <- function(n) {
+  sum <- 0
+  while (n > 0) {
+    sum <- sum + (n %% 10)
+    n <- n %/% 10
+  }
+
+  # функция проверки на простоту
+  is_prime <- function(n) {
+    if (n <= 1) {
+      return(FALSE)
+    } else if (n <= 3) {
+      return(TRUE)
+    } else if (n %% 2 == 0 || n %% 3 == 0) {
+      return(FALSE)
+    }
+
+    i <- 5;
+    while (i * i <= n) {
+      if (n %% i == 0 || n %% (i + 2) == 0) {
+        return(FALSE)
+      }
+
+      i <- i + 6;
+    }
+    return(TRUE)
+  }
+
+  # вызов функции для проверки простоты суммы цифр числа
+  if (is_prime(summa)) {
+    print(paste(summa, "is prime"))
+  } else {
+    print(paste(summa, "is not prime"))
+  }
+
+}
+
+for (i in 1:100) {
+  sum_digits(i)
+}
