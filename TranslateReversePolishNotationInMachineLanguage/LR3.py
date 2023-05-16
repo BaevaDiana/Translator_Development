@@ -155,7 +155,7 @@ f.close()
 def ml():
     label4 = tkinter.Label(window, text='Программа на выходном языке', font=("Arial", 10), foreground="white",background="#574f4f")
     label4.place(x=475, y=400, width=245, height=45)
-    ml_text = open('output.txt',encoding='UTF-8').readlines()
+    ml_text = open('С++.txt',encoding='UTF-8').readlines()
     ml_text = ''.join(ml_text)
     textline1 = Text(window, height=15, width=100)
     textline1.insert(1.0, ml_text)

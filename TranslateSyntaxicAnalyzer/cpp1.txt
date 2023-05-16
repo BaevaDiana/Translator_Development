@@ -1,0 +1,42 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int sum_digits(int n) {
+  int sum = 0;
+  while (n > 0) {
+    sum += n % 10;
+    n /= 10;
+  }
+  return sum;
+}
+
+bool is_prime(int n) {
+  if (n <= 1) {
+    return false;
+  } else if (n <= 3) {
+    return true;
+  } else if (n % 2 == 0 || n % 3 == 0) {
+    return false;
+  
+  int i = 5;
+  while (i * i <= n) {
+    if (n % i == 0 || n % (i + 2) == 0) {
+      return false;
+    }
+    i += 6;
+  }
+  return true;
+}
+
+int main() {
+    for (int i = 1; i <=100; i++) {
+        int summa = sum_digits(i);
+        if (is_prime(summa)) {
+            cout << summa << " is prime" << endl;
+        } else {
+            cout << summa << " is not prime" << endl;
+        }
+    }
+    return 0;
+}
